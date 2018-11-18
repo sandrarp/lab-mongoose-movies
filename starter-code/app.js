@@ -54,5 +54,8 @@ app.locals.title = 'Express - Generated with IronGenerator';
 const index = require('./routes/index');
 app.use('/', index);
 
+const celebsRouter = require('./routes/celebrities');
+app.use('/celebrities', celebsRouter);
+
 
 module.exports = app;
